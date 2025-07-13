@@ -1,0 +1,19 @@
+class vehiculo:
+    def mover(self):
+      pass
+
+class coche:
+    def mover(self):
+      return"el coche se mueve en circulos"
+      
+class bicicleta:
+    def mover(self):
+        return"la bicicleta se mueve en linea recta"
+
+vehiculo1 = coche()
+vehiculo2 = bicicleta()
+
+vehiculo = {vehiculo1, vehiculo2}
+
+for animal in vehiculos:
+   print(vehiculo.mover())
