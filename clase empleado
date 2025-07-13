@@ -1,0 +1,17 @@
+class empleado:
+    def calcularsalario(self):
+        pass
+    
+class empleadoporhora(empleado):
+    def calcularsalario(self):
+        return"empleado por hora seda 1100"
+        
+class empleadofijo(empleado):
+    def calcularsalario(self):
+        return"el empleado fijo seda 5000"
+
+empleado={empleadoporhora(), empleadofijo()}
+
+for empleado in empleado:
+    print(empleado.calcularsalario())
+    
