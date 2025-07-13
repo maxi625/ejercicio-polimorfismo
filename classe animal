@@ -1,22 +1,16 @@
-class Animal:
+class animal:
+    def hacersonido(self):
+        pass  
+
+class perro(animal):
+    def hacersonido(self):
+        return "guau"
+
+class gato(animal):
     def hacerSonido(self):
-        raise NotImplementedError("Este método debe ser implementado por las subclases.")
+        return "miau"
 
-class Perro(Animal):
-    def hacerSonido(self):
-        return "Guau"
+animal={perro(), gato()}
 
-class Gato(Animal):
-    def hacerSonido(self):
-        return "Miau"
-
-animales = [
-    Perro(),
-    Gato(),
-    Perro(),
-    Gato(),
-    Perro()
-]
-
-for i, animal in enumerate(animales, start=1):
-    print(f"Animal {i}: {animal.hacerSonido()}")
+for animal in animal:
+  print(animal.hacersonido())
