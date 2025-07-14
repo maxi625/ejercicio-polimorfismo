@@ -1,0 +1,17 @@
+class pago:
+    def procesarpago(self):
+        pass
+    
+class tarjetacredito(pago):
+    def procesarpago(self):
+        return"se pago 1000 pesos en tu tarjeta de credito"
+
+class paypal(pago):
+    def procesarpago(self):
+        return"se pago 1200 pesos en tu paypal"
+        
+pago={tarjetacredito(), paypal()}
+
+for pago in pago:
+    print(pago.procesarpago())
+
